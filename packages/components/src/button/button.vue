@@ -2,9 +2,9 @@
     <button class="sc-button" :class="buttonStyle"><slot /></button>
 </template>
 <script lang="ts" setup>
+defineOptions({ name: 'SCButton' })
 import './style/index.less'
 import { computed } from 'vue'
-defineOptions({ name: 'sc-button' })
 type ButtonProps = {
     type?: string
 }

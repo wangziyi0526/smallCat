@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 pnpm-lock.yaml
+small-cat-ui
+cache
+dist
  
 # Editor directories and files
 .idea

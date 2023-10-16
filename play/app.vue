@@ -1,8 +1,9 @@
 <template>
     <div>
-        <Button type="primary">主要按钮</Button>
+        <SCButton type="primary">主要按钮</SCButton>
+        <SCButton>默认按钮</SCButton>
     </div>
 </template>
 <script lang="ts" setup>
-import { Button } from '@SmallCat/components'
+import { SCButton } from '@small-cat-ui/components'
 </script>
