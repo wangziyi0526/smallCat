@@ -63,10 +63,12 @@ importers:
   site:
     specifiers:
       '@small-cat-ui/components': workspace:^1.0.0
+      small-cat-ui: workspace:^1.0.1
       vitepress: 1.0.0-rc.22
       vue: ^3.2.36
     dependencies:
       '@small-cat-ui/components': link:../packages/components
+      small-cat-ui: link:../packages/small-cat-ui
     devDependencies:
       vitepress: 1.0.0-rc.22
       vue: 3.2.36
