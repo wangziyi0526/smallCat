@@ -5,10 +5,11 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build:smallCat": "gulp -f packages/components/script/build/index.ts"
+        "build:smallCat": "gulp -f packages/components/script/build/index.ts",
+        "publish:easyest": "gulp -f packages/components/script/publish/index.ts"
     },
     "keywords": [],
-    "author": "",
+    "author": "wangziyi",
     "license": "ISC",
     "devDependencies": {
         "@types/gulp": "^4.0.15",
