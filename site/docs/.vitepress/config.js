@@ -36,7 +36,11 @@ export default {
                     items: [
                         {
                             text: "Button",
-                            link: "/components/button",
+                            link: "/components/button/",
+                        },
+                        {
+                            text: "Loading",
+                            link: "/components/loading/",
                         }
                     ],
                 }
