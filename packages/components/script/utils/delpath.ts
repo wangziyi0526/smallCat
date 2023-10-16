@@ -21,7 +21,7 @@ const delPath = async (path: string) => {
                 }
             }
         })
-        if (path != `${pkgPath}/SmallCat`) fs.rmdirSync(path)
+        if (path != `${pkgPath}/small-cat-ui`) fs.rmdirSync(path)
     }
 }
 export default delPath

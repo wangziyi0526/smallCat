@@ -1,5 +1,5 @@
 {
-    "name": "SmallCat",
+    "name": "small-cat-ui",
     "version": "1.0.0",
     "description": "wzy的vue3组件库",
     "main": "index.js",
@@ -16,7 +16,7 @@
         "**/*.css"
     ],
     "keywords": [
-        "smallCat",
+        "small-cat-ui",
         "vue3组件库"
     ],
     "repository": {

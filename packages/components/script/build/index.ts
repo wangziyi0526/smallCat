@@ -4,18 +4,18 @@ import { pkgPath, componentPath } from '../utils/paths'
 import less from 'gulp-less'
 import autoprefixer from 'gulp-autoprefixer'
 import run from '../utils/run'
-//删除SmallCat
+//删除small-cat-ui
 
 export const removeDist = () => {
-    return delPath(`${pkgPath}/SmallCat`)
+    return delPath(`${pkgPath}/small-cat-ui`)
 }
 //打包样式
 export const buildStyle = () => {
     return src(`${componentPath}/src/**/style/**.less`)
         .pipe(less())
         .pipe(autoprefixer())
-        .pipe(dest(`${pkgPath}/SmallCat/lib/src`))
-        .pipe(dest(`${pkgPath}/SmallCat/es/src`))
+        .pipe(dest(`${pkgPath}/small-cat-ui/lib/src`))
+        .pipe(dest(`${pkgPath}/small-cat-ui/es/src`))
 }
 
 //打包组件
