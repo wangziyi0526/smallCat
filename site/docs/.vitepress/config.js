@@ -1,6 +1,6 @@
 export default {
     themeConfig: {
-        siteTitle: "vitepress",
+        siteTitle: 'SmallCat',
         nav: [
             { text: "指南", link: "/guild/installation" },
             { text: "组件", link: "/components/button/" },
@@ -49,5 +49,9 @@ export default {
         socialLinks: [
             { icon: "github", link: "https://github.com/wangziyi0526/smallCat" },
         ],
+        footer: {
+            message: '花有重开日, 人无再少年',
+            copyright: 'keep moving...'
+        }
     },
 };
