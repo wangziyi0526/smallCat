@@ -1,0 +1,24 @@
+{
+    "name": "SmallCat",
+    "version": "1.0.0",
+    "description": "wzy的vue3组件库",
+    "main": "index.js",
+    "module": "es/index.mjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "flies": [
+        "lib",
+        "es"
+    ],
+    "sideEffects": [
+        "**/*.css"
+    ],
+    "keywords": [
+        "smallCat",
+        "vue3组件库"
+    ],
+    "author": "Charles",
+    "license": "ISC",
+    "typings": "lib/index.d.ts"
+}
