@@ -1,6 +1,6 @@
 {
     "name": "small-cat-ui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "wzy的vue3组件库",
     "main": "index.js",
     "module": "es/index.mjs",
