@@ -4,7 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "pnpm run --filter site docs:dev",
+        "docs:build": "pnpm run --filter site docs:build",
+        "docs:preview": "pnpm run --filter site docs:preview",
+        "smallCat:dev": "pnpm run --filter ./play dev",
         "build:smallCat": "gulp -f packages/components/script/build/index.ts",
         "publish:smallCat": "gulp -f packages/components/script/publish/index.ts",
         "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
