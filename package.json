@@ -11,12 +11,22 @@
         "build:smallCat": "gulp -f packages/components/script/build/index.ts",
         "publish:smallCat": "gulp -f packages/components/script/publish/index.ts",
         "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
-        "lint:style": "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+        "lint:style": "stylelint --fix \"packages/components/src/**/*.{css,less}\"",
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,vue}": [
+            "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+            "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+        ]
     },
     "keywords": [],
     "author": "wangziyi",
     "license": "ISC",
     "devDependencies": {
+        "@commitlint/cli": "^17.8.0",
+        "@commitlint/config-conventional": "^17.8.0",
         "@types/gulp": "^4.0.15",
         "@types/gulp-autoprefixer": "^0.0.35",
         "@types/gulp-less": "^0.0.34",
@@ -35,6 +45,7 @@
         "gulp-autoprefixer": "^8.0.0",
         "gulp-less": "^5.0.0",
         "happy-dom": "^12.9.1",
+        "husky": "^8.0.3",
         "less": "^4.2.0",
         "postcss-html": "^1.5.0",
         "prettier": "^3.0.3",
